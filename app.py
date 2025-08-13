@@ -1,6 +1,6 @@
 
 
-**app.py*
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -77,6 +77,7 @@ if new_file:
     st.write(new_df)
     new_df.to_csv("predictions.csv", index=False)
     st.download_button("Download Predictions", data=new_df.to_csv(index=False), file_name="predictions.csv")
+
 
 
 
